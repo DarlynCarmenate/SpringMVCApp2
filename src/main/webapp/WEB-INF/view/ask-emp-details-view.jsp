@@ -9,6 +9,7 @@
 <br>
 <br>
 
+<%--@elvariable id="employee" type="ru.darlyn.springMVC.Employee"--%>
 <form:form action="showDetails" modelAttribute="employee">
 
     Name <form:input path="name"/>
@@ -16,6 +17,10 @@
     Surname <form:input path="surname"/>
     <br><br>
     Salary <form:input path="salary"/>
+    <br><br>
+    Department <form:select path="department">
+    <form:options items="${employee.departments}"/>
+    </form:select>
     <br><br>
 
     <input type="submit" value="OK">
