@@ -9,6 +9,15 @@ public class Employee {
     private int salary;
     private String department;
     private Map<String, String> departments;
+    private String carBrand;
+
+    public String getCarBrand() {
+        return carBrand;
+    }
+
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
+    }
 
     public Map<String, String> getDepartments() {
         return departments;
