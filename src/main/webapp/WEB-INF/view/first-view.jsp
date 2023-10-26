@@ -3,7 +3,7 @@
 
 <body>
 
-<h2>The project successfully configured</h2>
+<h2>Welcome, dear employee!</h2>
 
 <br>
 <br>

@@ -8,6 +8,13 @@
   <name>SpringMVCApp2 Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+<!--  <properties>-->
+<!--    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--    <maven.compiler.sourse>1.8</maven.compiler.sourse>-->
+<!--    <maven.compiler.target>1.8</maven.compiler.target>-->
+
+<!--  </properties>-->
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -44,11 +51,16 @@
       <version>6.0.13</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>jstl</artifactId>
-      <version>1.2</version>
+      <groupId>org.glassfish.web</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+      <version>3.0.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jakarta.servlet.jsp.jstl</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+      <version>3.0.0</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
@@ -58,6 +70,14 @@
       <version>6.0.0</version>
       <scope>provided</scope>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>8.0.1.Final</version>
+    </dependency>
+
 
   </dependencies>
   <build>
